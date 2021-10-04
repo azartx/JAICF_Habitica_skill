@@ -18,17 +18,45 @@
     "shared" : false,
     "phrases" : [ {
       "text" : "открой шлагбаум номер @duckling.number"
+    }, {
+      "text" : "открой шлагбаум @views"
     } ],
     "patterns" : [ ],
     "slots" : [ {
-      "name" : "duckling.number",
+      "name" : "number",
       "entity" : "duckling.number",
+      "required" : true,
+      "prompts" : [ ]
+    }, {
+      "name" : "views",
+      "entity" : "views",
       "required" : true,
       "prompts" : [ ]
     } ],
     "priority" : 0
   } ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 83119,
+      "name" : "views",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 5157980,
+      "type" : "synonyms",
+      "rule" : [ "один" ],
+      "value" : "1"
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url", "duckling.number" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {
     "name" : "mystem.geo",
@@ -75,10 +103,6 @@
   }, {
     "name" : "pymorphy.orgn",
     "enabled" : false
-  }, {
-    "name" : "duckling.number",
-    "version" : "v2",
-    "enabled" : true
   }, {
     "name" : "duckling.ordinal",
     "version" : "v2",
@@ -132,5 +156,9 @@
   }, {
     "name" : "zb.number",
     "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
   } ]
 }
