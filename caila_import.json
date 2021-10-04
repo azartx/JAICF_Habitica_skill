@@ -52,8 +52,8 @@
     "records" : [ {
       "id" : 5157980,
       "type" : "synonyms",
-      "rule" : [ "один" ],
-      "value" : "1"
+      "rule" : [ "настройки" ],
+      "value" : "settings"
     } ]
   } ],
   "enabledSystemEntities" : [ "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url", "duckling.number" ],
