@@ -17,17 +17,10 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "открой шлагбаум номер @duckling.number"
-    }, {
       "text" : "открой шлагбаум @views"
     } ],
     "patterns" : [ ],
     "slots" : [ {
-      "name" : "number",
-      "entity" : "duckling.number",
-      "required" : true,
-      "prompts" : [ ]
-    }, {
       "name" : "views",
       "entity" : "views",
       "required" : true,
